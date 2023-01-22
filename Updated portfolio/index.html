@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Updated portfolio</title>
+</head>
+<body>
+
+    <header class="header">
+        <a class="header--logo" href="#">Bibiskop</a>
+        <ul class="header--nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#aboutMe">About me</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </header>
+
+
+    <section>
+        <img src="/img/stars.png" id="stars">
+        <h2 id="works">Works</h2>
+
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/works 3d/minion.png" id="minion">
+                <div class="text--img">Minion</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/works 3d/shaman.png" id="shaman">
+                <div class="text--img">Shaman</div>
+            </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+
+
+        <div class="slideshow-container2">
+            <div class="mySlides2 fade2">
+                <img src="/works web/first resume.png" id="first--resume">
+                <div class="text--img2">First resum</div>
+            </div>
+            <div class="mySlides2 fade2">
+                <img src="/works web/neon placeholder2.png" id="neon--placeholder">
+                <div class="text--img2">Neon placeholder</div>
+            </div>
+            
+        <a class="prev2" onclick="plusSlides2(-1)">&#10094</a>
+        <a class="next2" onclick="plusSlides2(1)">&#10095</a>
+        </div>
+    </section>
+
+    
+    <div class="aboutMe" id="aboutMe">
+        <h2 class="aboutMe--zagolovok">About me</h2>
+        <p class="aboutMe--text">Beginner web developer with 1 year experience. I have been doing 3D modeling for 4 years. Worked in a startup team as a graphic designer, doing 3D models and 3D printing.</p>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer--contacts" id="contacts">
+            <li><a href="#"> <img src="/img/гетхаб.svg" height="30" width="30" id="github"> Github</a></li>
+            <li><a href="#"> <img src="/img/арт.svg" height="30" width="30" id="art"> Artstation</a></li>
+            <li><a href="#"> <img src="/img/имейл.svg" height="30" width="30" id="email"> bibiskop21@gmail.com</a></li>
+        </ul>
+    </footer>
+
+    <script src="/slider.js"></script>
+    <script src="/animation--stars.js"></script>
+</body>
+</html>

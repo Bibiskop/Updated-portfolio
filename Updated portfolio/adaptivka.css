@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1900px)
+{
+.header .header--logo
+{
+    font-size: 3em;
+}
+.header .header--nav li a
+{
+    font-size: 1.3em;
+}
+.slideshow-container, .slideshow-container2
+{
+    width: 608px;
+}
+.prev,.prev2
+{
+    border-radius: 20px 0 0 20px;
+}
+.next,.next2
+{
+    border-radius: 0 20px 20px 0;
+}
+.prev, .next,.prev2, .next2
+{
+    font-size: 60px;
+}
+.text--img,.text--img2
+{
+    font-size: 30px;
+}
+#works
+{
+    font-size: 6vw;
+}
+.aboutMe .aboutMe--zagolovok
+{
+    font-size: 5em;
+}
+.aboutMe .aboutMe--text
+{
+    font-size: 1.5em;
+}
+.footer a
+{
+    font-size: 1.4em;
+}
+}

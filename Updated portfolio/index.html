@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptivka.css">
     <title>Updated portfolio</title>
 </head>
 <body>
-
     <header class="header">
         <a class="header--logo" href="#">Bibiskop</a>
         <ul class="header--nav">
@@ -19,39 +19,31 @@
         </ul>
     </header>
 
-
+    <h2 id="works">Works</h2>
     <section>
-        <img src="/img/stars.png" id="stars">
-        <h2 id="works">Works</h2>
 
-        
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="/works 3d/minion.png" id="minion">
-                <div class="text--img">Minion</div>
+                
+                <div class="text--img"><a class="prev" onclick="plusSlides(-1)">&#10094</a>Minion<a class="next" onclick="plusSlides(1)">&#10095</a></div>
+                
             </div>
             <div class="mySlides fade">
                 <img src="/works 3d/shaman.png" id="shaman">
-                <div class="text--img">Shaman</div>
+                <div class="text--img"><a class="prev" onclick="plusSlides(-1)">&#10094</a>Shaman<a class="next" onclick="plusSlides(1)">&#10095</a></div>
             </div>
             
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
-
-
         <div class="slideshow-container2">
             <div class="mySlides2 fade2">
                 <img src="/works web/first resume.png" id="first--resume">
-                <div class="text--img2">First resum</div>
+                <div class="text--img2"><a class="prev2" onclick="plusSlides2(-1)">&#10094</a>First resum<a class="next2" onclick="plusSlides2(1)">&#10095</a></div>
             </div>
             <div class="mySlides2 fade2">
                 <img src="/works web/neon placeholder2.png" id="neon--placeholder">
-                <div class="text--img2">Neon placeholder</div>
+                <div class="text--img2"><a class="prev2" onclick="plusSlides2(-1)">&#10094</a>Neon placeholder<a class="next2" onclick="plusSlides2(1)">&#10095</a></div>
             </div>
-            
-        <a class="prev2" onclick="plusSlides2(-1)">&#10094</a>
-        <a class="next2" onclick="plusSlides2(1)">&#10095</a>
         </div>
     </section>
 
@@ -70,6 +62,6 @@
     </footer>
 
     <script src="/slider.js"></script>
-    <script src="/animation--stars.js"></script>
+    <script src="/animaion--stars.js"></script>
 </body>
 </html>

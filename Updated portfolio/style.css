@@ -13,12 +13,11 @@ body
     overflow-x: hidden;
     min-height: 100vh;
     background: linear-gradient(#2b1055,#2f135e);
+    display: flex;
+    flex-direction: column;
 }
 .header
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 30px 100px;
     display: flex;
@@ -61,128 +60,52 @@ body
 }
 section
 {
-    position: relative;
     width: 100%;
-    height: 150vh;
-    padding: 100px;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-}
-section::before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    /*background:  linear-gradient(to top,#34093f,transparent);*/
-    z-index: 1000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 section img
 {
-    position: absolute;
     object-fit: cover;
 }
-.slideshow-container
-{
-    width: 434px;
-    position: absolute;
-    margin: auto;
-
-}
-.slideshow-container2
-{
-    left: 1054px;
-    top: 524px;
-    width: 434px;
-    position: absolute;
-    margin: auto;
-
-}
-.prev, .next
+.prev, .next,.prev2, .next2
 {
     cursor: pointer;
-    position: absolute;
-    top: 20px; 
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    padding: 0 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
+}
+.prev,.prev2
+{
     border-radius: 3px 0 0 3px;
 }
-.prev
+.next,.next2
 {
-    left: -330px;
-}
-.next
-{
-    left: 144px;
     border-radius: 0 3px 3px 0;
 }
-.prev:hover, .next:hover
+.prev:hover, .next:hover,.prev2:hover, .next2:hover
 {
     background:white;
     color: #2b1055;
 }
-.prev2, .next2
-{
-    cursor: pointer;
-    position: absolute;
-    top: 20px; 
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 3px 0 0 3px;
-}
-.prev2
-{
-    left: -330px;
-}
-.next2
-{
-    left: 144px;
-    border-radius: 0 3px 3px 0;
-}
-.prev2:hover, .next2:hover
-{
-    background:white;
-    color: #2b1055;
-}
-.text--img
+.text--img,.text--img2
 {
     color: white;
     font-size: 12px;
     padding: 8px 12px;
-    position: absolute;
-    top: 432px;
-    left: 187px;
+    text-align: center;
 }
-.text--img2
-{
-    color: white;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 383px;
-    left: 153px;
-}
-
-.fade
-{
-    left: -290px;
-    top: -200px;    
-    position: relative;
-}
-.fade
+.fade,.fade2
 {
     -webkit-animation-name:fade;
     -webkit-animation-duration:1.5s;
@@ -199,29 +122,7 @@ section img
     from{opacity: .4;}
     to{opacity: 1;}
 }
-.fade2
-{
-    left: -290px;
-    top: -200px;    
-    position: relative;
-}
-.fade2
-{
-    -webkit-animation-name:fade2;
-    -webkit-animation-duration:1.5s;
-    animation-name:fade2;
-    animation-duration:1.5s;
-}
-@-webkit-keyframes fade2
-{
-    from{opacity: .4;}
-    to{opacity: 1;}
-}
-@keyframes fade2
-{
-    from{opacity: .4;}
-    to{opacity: 1;}
-}
+
 #stars
 {
     height: auto;
@@ -229,8 +130,7 @@ section img
 }
 #minion
 {
-    width: 100%;
-    
+    width: 100%;  
 }
 #shaman
 {
@@ -246,19 +146,19 @@ section img
 }
 #works
 {
-    position: absolute;
     color: white;
     white-space: nowrap;
     font-size: 7.5vw;
-    top: 100px;
     z-index: 9;
+    text-align: center;
 }
 .aboutMe
 {
-    top: -150px;
-    position: relative;
+    height: auto;
     width: 100%;
     padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
 }
 .aboutMe .aboutMe--zagolovok
 {
@@ -270,22 +170,12 @@ section img
 {
     font-size: 1.2em;
     color: white;
-
-}
-.aboutMe::before
-{
-    left: 0;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
 }
 .footer
 {
     width: 100%;
+    height: auto;
     padding-bottom: 50px;
-    position: relative;
 }
 .footer .footer--contacts
 {
@@ -301,4 +191,5 @@ section img
 {
     text-decoration: none;
     color: white;
+    font-size: 1em;
 }

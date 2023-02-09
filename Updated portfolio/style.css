@@ -193,3 +193,8 @@ section img
     color: white;
     font-size: 1em;
 }
+.footer .footer--contacts li a img
+{
+    height: 30px; 
+    width: 30px;
+}
